@@ -35,7 +35,7 @@ export function ManufacturingCapabilities() {
   const [activeTab, setActiveTab] = useState(capabilities[0].id);
 
   return (
-    <section className="py-32 bg-[#FAFAFA] text-[#2D2727] relative">
+    <section className="py-32 bg-white/20 backdrop-blur-md text-[#2D2727] relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4">
@@ -63,7 +63,7 @@ export function ManufacturingCapabilities() {
            </div>
 
            {/* Content Area */}
-           <div className="w-full md:w-2/3 bg-white p-8 md:p-12 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-black/5 min-h-[400px] flex flex-col justify-center">
+           <div className="w-full md:w-2/3 bg-white/60 backdrop-blur-lg p-8 md:p-12 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-white/20 min-h-[400px] flex flex-col justify-center">
               {capabilities.map((cap) => (
                  cap.id === activeTab && (
                    <motion.div

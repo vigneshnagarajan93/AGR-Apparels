@@ -36,7 +36,7 @@ export function HorizontalCategories() {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-66.66%"]);
 
   return (
-    <section ref={targetRef} id="collections" className="relative h-[300vh] bg-white">
+    <section ref={targetRef} id="collections" className="relative h-[300vh] bg-white/30 backdrop-blur-sm">
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
         <div className="container mx-auto px-6 mb-12 flex justify-between items-end">
           <div>
