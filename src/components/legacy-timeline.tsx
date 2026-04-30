@@ -11,7 +11,7 @@ const milestones = [
 
 export function LegacyTimeline() {
   return (
-    <section id="expertise" className="py-32 bg-white relative overflow-hidden">
+    <section id="expertise" className="py-32 bg-white/40 backdrop-blur-md relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-20 text-balance">
           <h2 className="text-5xl md:text-7xl font-bold text-[#2D2727] tracking-tighter mb-4">Discover Our Heritage</h2>
