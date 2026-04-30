@@ -14,16 +14,22 @@ export default function Home() {
       <div className="relative z-10">
         <Navigation />
       <Hero />
-      <LegacyTimeline />
       
-      <Marquee />
-      <SeedToStitch />
+      {/* 2. Fabric Phase (Legacy & Seed) */}
+      <div className="min-h-screen py-32 flex flex-col justify-center">
+        <LegacyTimeline />
+        <Marquee />
+        <SeedToStitch />
+      </div>
 
-      <HorizontalCategories />
-      <ManufacturingCapabilities />
+      {/* 3. Shirt Phase (Categories & Capabilities) */}
+      <div className="min-h-screen py-32 flex flex-col justify-center">
+        <HorizontalCategories />
+        <ManufacturingCapabilities />
+      </div>
 
-      {/* Footer CTA */}
-      <footer className="bg-[#4F6F52]/90 backdrop-blur-sm py-24 text-center text-white relative overflow-hidden">
+      {/* 4. Box/Shipping Phase (Footer) */}
+      <footer className="min-h-screen bg-[#4F6F52]/90 backdrop-blur-sm py-24 flex flex-col items-center justify-center text-white relative overflow-hidden">
          <div className="absolute inset-0 bg-noise pointer-events-none opacity-20" />
          <div className="container relative z-10 mx-auto px-6 max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to scale ethically?</h2>
